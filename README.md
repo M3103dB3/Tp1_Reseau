@@ -5,7 +5,7 @@ Tadja Mehdi
 ##1)Client/Serveur UDP en Python
 
 UDPclient:
-
+```python
 from socket import *
 serverName = ‘hostname’ 
 serverPort = 12000 
