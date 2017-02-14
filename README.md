@@ -15,9 +15,9 @@ clientSocket.sendto(message,(serverName, serverPort))
 modifiedMessage, serverAddress = clientSocket.recvfrom(2048)                  
 print modifiedMessage
 clientSocket.close()
-     
+```
 ###UDPserver:
-
+```python
 from socket import *
 serverPort = 12000
 serverSocket = socket(AF_INET, SOCK_DGRAM)
@@ -28,4 +28,4 @@ while 1:
      	modifiedMessage = message.upper()
           print modifiedMessage
     	serverSocket.sendto(modifiedMessage, clientAddress)
-    
+```    
