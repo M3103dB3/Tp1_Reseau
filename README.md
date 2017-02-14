@@ -4,7 +4,7 @@ Tadja Mehdi
 
 ##1)Client/Serveur UDP en Python
 
-UDPclient:
+###UDPclient:
 ```python
 from socket import *
 serverName = ‘hostname’ 
@@ -16,7 +16,7 @@ modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
 print modifiedMessage
 clientSocket.close()
      
-UDPserver:
+###UDPserver:
 
 from socket import *
 serverPort = 12000
