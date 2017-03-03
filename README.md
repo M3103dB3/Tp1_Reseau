@@ -38,7 +38,7 @@ localhost est l'ip sur lequel on veut envoyer le msg
 on écrit ensuite le message que l'on veut envoyer
 
 ###UDPserver:
-*pour* créer un server netcat on tape: nc -l -u 12000
+pour créer un server netcat on tape: nc -l -u 12000
 le -l sert à dire au server d'écouter 
 le -u sert à dire qu'on travail en UDP
 12000 est le port sur lequel le serveur va travailler et communiquer avec le client
