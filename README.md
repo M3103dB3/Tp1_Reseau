@@ -7,7 +7,7 @@ Tadja Mehdi
 ###UDPclient:
 ```python
 from socket import *
-serverName = ‘hostname’ 
+serverName = ‘localhost’ 
 serverPort = 12000 
 clientSocket = socket(socket.AF_INET, socket.SOCK_DGRAM)  
 message = raw_input(’Input lowercase sentence:’) 
@@ -21,7 +21,7 @@ clientSocket.close()
 from socket import *
 serverPort = 12000
 serverSocket = socket(AF_INET, SOCK_DGRAM)
-serverSocket.bind((’’, serverPort))
+serverSocket.bind((’localhost’, serverPort))
 print ”The server is ready to receive”
 while 1:
      	message, clientAddress = serverSocket.recvfrom(2048)
@@ -29,3 +29,17 @@ while 1:
           print modifiedMessage
     	serverSocket.sendto(modifiedMessage, clientAddress)
 ```    
+##2)Client/Server UPD en Netcat
+###UDPclient:
+pr créé un client netcat on tape: nc -u localhost 12000   
+le -u sert à dire qu'on travail en UDP
+localhost est l'ip sur lequel on veut envoyer le msg
+12000 est le port sur lequel le server se trouve
+on écrit ensuite le message que l'on veut envoyer
+
+###UDPserver:
+pr créer un server netcat on tape: nc -l -u 12000
+le -l sert à dire au server d'écouter 
+le -u sert à dire qu'on travail en UDP
+12000 est le port sur lequel le serveur va travailler 
+
