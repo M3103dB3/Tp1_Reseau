@@ -31,15 +31,15 @@ while 1:
 ```    
 ##2)Client/Server UPD en Netcat
 ###UDPclient:
-pr créé un client netcat on tape: nc -u localhost 12000   
+pour créé un client netcat on tape: nc -u localhost 12000   
 le -u sert à dire qu'on travail en UDP
 localhost est l'ip sur lequel on veut envoyer le msg
-12000 est le port sur lequel le server se trouve
+12000 est le port sur lequel le server se trouve et avec lequel on veut communiquer
 on écrit ensuite le message que l'on veut envoyer
 
 ###UDPserver:
-pr créer un server netcat on tape: nc -l -u 12000
+pour créer un server netcat on tape: nc -l -u 12000
 le -l sert à dire au server d'écouter 
 le -u sert à dire qu'on travail en UDP
-12000 est le port sur lequel le serveur va travailler 
+12000 est le port sur lequel le serveur va travailler et communiquer avec le client
 
