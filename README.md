@@ -3,7 +3,6 @@
 Tadja Mehdi
 
 ##1)Client/Serveur UDP en Python
-
 ###UDPclient:
 ```python
 from socket import *
@@ -43,7 +42,7 @@ le -l sert à dire au server d'écouter
 le -u sert à dire qu'on travail en UDP
 12000 est le port sur lequel le serveur va travailler et communiquer avec le client
 
-##3)Client/Server TCP en python:
+##3)Client/Server TCP en Python:
 ###TCPclient.py:
 ``` python
 from socket import *
@@ -74,4 +73,18 @@ while 1:
 	print capitalizedSentence	
 	connectionSocket.close()
 ``` 
+##4)Client/Server TCP en Netcat:
+#TCPclient:
+pour créer un server netcat on tape: nc -t 12000
+le -t sert à dire que l'on travaille en TCP
+localhost est l'ip sur lequel on veut envoyer le msg
+12000 est le port sur lequel le server se trouve et avec lequel on veut communiquer
+on écrit ensuite le message que l'on veut envoyer
+
+#TCPserver:
+pour créer un server netcat on tape: nc -t -l 12000
+le -l sert à dire au server d'écouter 
+le -t sert à dire que l'on travaille en TCP
+12000 est le port sur lequel le serveur va travailler et communiquer avec le client
+
 
