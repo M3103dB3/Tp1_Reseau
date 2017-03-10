@@ -82,9 +82,10 @@ localhost est l'ip sur lequel on veut envoyer le msg
 on écrit ensuite le message que l'on veut envoyer
 
 #TCPserver:
-Pour créer un server netcat on tape: nc -t -l 12000
+Pour créer un server netcat on tape: nc -t -l -p 12000
 le -l sert à dire au server d'écouter 
 le -t sert à dire que l'on travaille en TCP
+le -p sert à spécifier le port
 12000 est le port sur lequel le serveur va travailler et communiquer avec le client
 
 
