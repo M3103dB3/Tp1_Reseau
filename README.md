@@ -75,6 +75,7 @@ while 1:
 ``` 
 ##4)Client/Server TCP en Netcat:
 #TCPclient:
+
 Pour créer un server netcat on tape: nc -t 12000
 le -t sert à dire que l'on travaille en TCP
 localhost est l'ip sur lequel on veut envoyer le msg
@@ -82,6 +83,7 @@ localhost est l'ip sur lequel on veut envoyer le msg
 on écrit ensuite le message que l'on veut envoyer
 
 #TCPserver:
+
 Pour créer un server netcat on tape: nc -t -l -p 12000
 le -l sert à dire au server d'écouter 
 le -t sert à dire que l'on travaille en TCP
